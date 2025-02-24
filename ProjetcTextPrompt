@@ -1,0 +1,16 @@
+package project01;
+
+import javax.swing.JOptionPane;
+
+public class Main {
+	public static void main(String[] args) {
+
+		String nome;
+		int idade;
+
+		nome = JOptionPane.showInputDialog(null, "Digite seu nome aqui: ");
+		idade = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite sua idade aqui: "));
+		JOptionPane.showMessageDialog(null, nome + " tem " + idade + " anos ");
+		
+	}
+}
