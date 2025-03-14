@@ -48,8 +48,14 @@ public class Ex2 {
         System.out.println("\nMédia dos alunos:");
         for (int i = 0; i < aluno.length; i++) {
             System.out.printf("A média do aluno %d foi de: %,.2f%n", (i + 1), aluno[i]); // %,.2f%n lembrar desse definidor de casa decimal, USAR COM "printf"
+            if(aluno[i] > 6) {
+                System.out.println("Está aprovado!");
+            } else if(aluno[i] > 4 && aluno[i] <= 6) {
+                System.out.println("Está em recuperação!");
+            } else {
+                System.out.println("Está reprovado!");
+            }
         }
-
         sc.close();
     }
 }
